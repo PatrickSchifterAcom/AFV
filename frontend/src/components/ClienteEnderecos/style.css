@@ -1,0 +1,48 @@
+.c-enderecos-open{
+    display: flex;
+    width: 58vw;
+    height: 60vh;
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    top: 25%;
+    left: 25%;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.c-enderecos-closed{
+    display: none;
+}
+
+.c-enderecos-open header{
+    background-color: #2c3d5b;
+    height: 7%;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-enderecos-open header .buttons{
+    width: 5%;
+    height: 100%;
+}
+
+.c-enderecos-open header button{
+    width: 50%;
+    height: 100%;
+    text-decoration: underline;
+    color: white;
+    background-color: #2c3d5b;
+    border: 1px solid rgb(160, 160, 160);
+    cursor: pointer;
+}
+
+.c-enderecos-open p{
+    color: white;
+    margin-left: 1%;
+}
+
+

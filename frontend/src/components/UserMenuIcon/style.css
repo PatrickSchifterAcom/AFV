@@ -1,0 +1,32 @@
+.user-icon-wrap{
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-icon{
+    color: #2c3d5b;
+}
+
+#arrow-user{
+    width: 7px;
+    margin-left: 5px;
+}
+
+
+.user-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-right: 8%;
+    cursor: pointer;
+}
+
+.user-container p{
+    color: white;
+}

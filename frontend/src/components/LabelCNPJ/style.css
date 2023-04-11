@@ -1,0 +1,20 @@
+.default-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.default-input label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.default-input input{
+    height: 35px;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 5px;
+}
+
+[disabled] {
+    background-color: #e9e8e8;
+  }

@@ -1,0 +1,17 @@
+.item-menu-closed{
+    display: none;
+}
+
+.item-menu-open{
+    display: block;
+}
+
+.sub-item-menu{
+    padding: 5% 0% 5% 16%;
+    font-size: 1rem;
+    border: 1px solid #272d42;
+    margin-right: 2%;
+    cursor: pointer;
+
+}
+
