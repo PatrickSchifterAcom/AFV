@@ -32,4 +32,6 @@ router.post('/menu', authenticateJWT, UserController.menu)
 
 router.post('/cliente_endereco', authenticateJWT, UserController.cliente_endereco)
 
+router.post('/pesquisar_cliente', authenticateJWT, UserController.pesquisaCliente)
+
 module.exports = router

@@ -294,5 +294,41 @@ module.exports = {
       const response = { sucess: true, data: data }
 
       return res.json(response)
+   },
+   async pesquisaCliente(req, res) {
+
+      const pesquisa ='%' + req.body.pesquisa + '%';
+
+      let data;
+
+      function obtemPesquisaCliente() {
+
+         const query = `SELECT * 
+                        FROM Cliente 
+                        WHERE Fantasia LIKE ?
+                        OR Razao LIKE ? 
+                        OR CPFCNPJ LIKE ?`
+
+         return new Promise((resolve, reject) => {
+            connection.query(query, [pesquisa, pesquisa, pesquisa], (error, results) => {
+               if (error) {
+                  reject(error);
+               }
+               resolve(results);
+            });
+         });
+      }
+
+      await obtemPesquisaCliente()
+         .then((results) => {
+            data = results;
+         })
+         .catch((error) => {
+            console.log(error);
+         })
+         
+         const response = { sucess: true, data: data }
+
+         return res.json(response);
    }
 }

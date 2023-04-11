@@ -166,7 +166,7 @@ return (
       <p>{alert}</p>
       <button onClick={closeModal}>Fechar</button>
     </Modal>
-    {openPesquisar ? <ListaDeCliente setOpenPesquisar={setOpenPesquisar} /> : <></>}
+    {openPesquisar ? <ListaDeCliente setOpenPesquisar={setOpenPesquisar} vPesquisa={pesquisar} /> : <></>}
   </div>
 )
 }
