@@ -28,7 +28,6 @@ const ListaDeCliente = ({setOpenPesquisar, vPesquisa}) => {
           .then((data) => {
             if(data.data.length > 0) {
               const dataR = data.data
-              console.log(dataR)
               setClientes(dataR)
             }
           })
@@ -38,7 +37,6 @@ const ListaDeCliente = ({setOpenPesquisar, vPesquisa}) => {
       }
     }
     if(vPesquisa !== null){
-      console.log(vPesquisa)
       obtemPesquisaCliente();
     }
 
@@ -55,7 +53,7 @@ const ListaDeCliente = ({setOpenPesquisar, vPesquisa}) => {
             </div>
         </header>
         <main>
-          <GradeListaCliente clientes={clientes} />
+          <GradeListaCliente clientes={clientes} setOpenPesquisar={setOpenPesquisar} />
         </main>
     </div>
   )

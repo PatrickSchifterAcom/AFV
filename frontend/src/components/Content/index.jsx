@@ -1,5 +1,7 @@
 import React, {useContext} from 'react';
 
+import { ContentProvider } from '../../contexts/contentContext';
+
 import PopUpMenuUser from '../PopUpMenuUser';
 import Tabs from '../Tabs';
 import { MenuContext } from '../../contexts/menuContext';
@@ -44,7 +46,8 @@ const Content = () => {
       <PopUpMenuUser />
       <Tabs />
       {activeTab === 2? <GraficosDashboard />: <div></div>}
-      {activeTab === 4? <Clientes />: <div></div>}
+      
+      {activeTab === 4? <ContentProvider><Clientes /></ContentProvider>: <div></div>}
       {activeTab === 5? <Representada />: <div></div>}
       {activeTab === 7? <CadastroDeProdutos />: <div></div>}
       {activeTab === 9? <TabelasDePrecos />: <div></div>}
